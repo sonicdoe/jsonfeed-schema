@@ -6,7 +6,7 @@
   "repository": "sonicdoe/jsonfeed-schema",
   "author": "Jakob Krigovsky <jakob@krigovsky.com>",
   "scripts": {
-    "test": "standard"
+    "test": "standard && ava"
   },
   "files": [
     "index.js",
@@ -20,6 +20,7 @@
     "feed"
   ],
   "devDependencies": {
+    "ava": "^0.19.1",
     "standard": "^10.0.2"
   }
 }
