@@ -5,6 +5,9 @@
   "license": "ISC",
   "repository": "sonicdoe/jsonfeed-schema",
   "author": "Jakob Krigovsky <jakob@krigovsky.com>",
+  "scripts": {
+    "test": "standard"
+  },
   "files": [
     "index.js",
     "schema-v1.json"
@@ -15,5 +18,8 @@
     "json",
     "schema",
     "feed"
-  ]
+  ],
+  "devDependencies": {
+    "standard": "^10.0.2"
+  }
 }
