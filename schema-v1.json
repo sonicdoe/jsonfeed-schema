@@ -96,10 +96,12 @@
             "format": "uri"
           },
           "date_published": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time"
           },
           "date_modified": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time"
           },
           "author": {
             "$ref": "#/definitions/author"
