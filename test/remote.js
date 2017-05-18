@@ -24,7 +24,6 @@ test('inessential.com', macro, 'http://inessential.com/feed.json')
 test('manton.org', macro, 'https://manton.org/feed/json')
 // Item IDs are numbers instead of strings.
 test.skip('micro.blog', macro, 'https://micro.blog/feeds/manton.json')
-// `size_in_bytes` is a string instead of a number.
-test.skip('timetable.manton.org', macro, 'http://timetable.manton.org/feed.json')
+test('timetable.manton.org', macro, 'http://timetable.manton.org/feed.json')
 test('therecord.co', macro, 'http://therecord.co/feed.json')
 test('allenpike.com', macro, 'http://www.allenpike.com/feed.json')
