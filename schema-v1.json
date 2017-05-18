@@ -38,22 +38,7 @@
       "format": "uri"
     },
     "author": {
-      "title": "Author",
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "url": {
-          "type": "string",
-          "format": "uri"
-        },
-        "avatar": {
-          "type": "string",
-          "format": "uri"
-        }
-      },
-      "minProperties": 1
+      "$ref": "#/definitions/author"
     },
     "expired": {
       "type": "boolean"
@@ -117,22 +102,7 @@
             "type": "string"
           },
           "author": {
-            "title": "Author",
-            "type": "object",
-            "properties": {
-              "name": {
-                "type": "string"
-              },
-              "url": {
-                "type": "string",
-                "format": "uri"
-              },
-              "avatar": {
-                "type": "string",
-                "format": "uri"
-              }
-            },
-            "minProperties": 1
+            "$ref": "#/definitions/author"
           },
           "tags": {
             "type": "array",
@@ -174,5 +144,25 @@
       }
     }
   },
-  "required": ["version", "title", "items"]
+  "required": ["version", "title", "items"],
+  "definitions": {
+    "author": {
+      "title": "Author",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "avatar": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "minProperties": 1
+    }
+  }
 }
