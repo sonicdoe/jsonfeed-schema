@@ -69,7 +69,8 @@
             "type": "string",
             "format": "uri"
           }
-        }
+        },
+        "required": ["type", "url"]
       }
     },
     "items": {
@@ -158,11 +159,14 @@
                 "duration_in_seconds": {
                   "type": "number"
                 }
-              }
+              },
+              "required": ["url", "mime_type"]
             }
           }
-        }
+        },
+        "required": ["id"]
       }
     }
-  }
+  },
+  "required": ["version", "title", "items"]
 }
