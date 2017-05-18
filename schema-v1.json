@@ -166,6 +166,10 @@
             }
           }
         },
+        "anyOf": [
+          { "required": ["content_html"] },
+          { "required": ["content_text"] }
+        ],
         "required": ["id"]
       }
     }
