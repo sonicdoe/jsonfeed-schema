@@ -6,7 +6,8 @@
   "properties": {
     "version": {
       "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "const": "https://jsonfeed.org/version/1"
     },
     "title": {
       "type": "string"
