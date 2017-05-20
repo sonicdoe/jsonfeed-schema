@@ -57,6 +57,12 @@
             "format": "uri"
           }
         },
+        "patternProperties": {
+          "^_\\w[^.]*$": {
+            "$ref": "#/definitions/extension"
+          }
+        },
+        "additionalProperties": false,
         "required": ["type", "url"]
       }
     },
@@ -135,10 +141,22 @@
                   "type": "number"
                 }
               },
+              "patternProperties": {
+                "^_\\w[^.]*$": {
+                  "$ref": "#/definitions/extension"
+                }
+              },
+              "additionalProperties": false,
               "required": ["url", "mime_type"]
             }
           }
         },
+        "patternProperties": {
+          "^_\\w[^.]*$": {
+            "$ref": "#/definitions/extension"
+          }
+        },
+        "additionalProperties": false,
         "anyOf": [
           { "required": ["content_html"] },
           { "required": ["content_text"] }
@@ -147,6 +165,12 @@
       }
     }
   },
+  "patternProperties": {
+    "^_\\w[^.]*$": {
+      "$ref": "#/definitions/extension"
+    }
+  },
+  "additionalProperties": false,
   "required": ["version", "title", "items"],
   "definitions": {
     "author": {
@@ -165,7 +189,21 @@
           "format": "uri"
         }
       },
-      "minProperties": 1
+      "minProperties": 1,
+      "patternProperties": {
+        "^_\\w[^.]*$": {
+          "$ref": "#/definitions/extension"
+        }
+      },
+      "additionalProperties": false
+    },
+    "extension": {
+      "title": "Extension",
+      "type": "object",
+      "patternProperties": {
+        "^[^.]*$": {}
+      },
+      "additionalProperties": false
     }
   }
 }
