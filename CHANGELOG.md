@@ -2,6 +2,11 @@
 
 All releases and their notable changes are documented in this file.
 
+## v0.3.0 (2017-05-20)
+
+- Specify exact value of `version` property (`https://jsonfeed.org/version/1`) ([`a6c2094`](https://github.com/sonicdoe/jsonfeed-schema/commit/a6c2094aaea9644be7dda2dc895cdc14095e9587))
+- Disallow additional properties except extensions ([`ed4909d`](https://github.com/sonicdoe/jsonfeed-schema/commit/ed4909dbef122cd2a999492bb23967d29f346bb4))
+
 ## v0.2.0 (2017-05-18)
 
 - Specify URI format where applicable ([`34c9b92`](https://github.com/sonicdoe/jsonfeed-schema/commit/34c9b92a6111363e71e7b064d5aab9c202cdcbe7))
