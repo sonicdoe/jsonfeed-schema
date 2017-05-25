@@ -22,7 +22,8 @@ test('daringfireball.net', macro, 'https://daringfireball.net/feeds/json')
 test('hypercritical.co', macro, 'http://hypercritical.co/feeds/main.json')
 test('inessential.com', macro, 'http://inessential.com/feed.json')
 test('manton.org', macro, 'https://manton.org/feed/json')
-// Item IDs are numbers instead of strings.
+// `author.url` sometimes is empty.
+// See https://github.com/brentsimmons/JSONFeed/issues/35.
 test.skip('micro.blog', macro, 'https://micro.blog/feeds/manton.json')
 test('timetable.manton.org', macro, 'http://timetable.manton.org/feed.json')
 test('therecord.co', macro, 'http://therecord.co/feed.json')
