@@ -15,7 +15,8 @@ test.beforeEach(t => {
   t.context.ajv = new Ajv()
 })
 
-test('shapeof.com', macro, 'http://shapeof.com/feed.json')
+// `date_published` is not a valid RFC 3339 timestamp.
+test.skip('shapeof.com', macro, 'http://shapeof.com/feed.json')
 test('flyingmeat.com', macro, 'http://flyingmeat.com/blog/feed.json')
 test('maybepizza.com', macro, 'http://maybepizza.com/feed.json')
 test('daringfireball.net', macro, 'https://daringfireball.net/feeds/json')
