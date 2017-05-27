@@ -7,5 +7,5 @@ The JSON Schema for [JSON Feed Version 1](https://jsonfeed.org/version/1) is in 
 It is also available on npm:
 
 ```
-$ npm install jsonfeed-schema --save
+$ npm install jsonfeed-schema
 ```
