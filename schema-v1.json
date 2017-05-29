@@ -47,23 +47,7 @@
     "hubs": {
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "type": {
-            "type": "string"
-          },
-          "url": {
-            "type": "string",
-            "format": "uri"
-          }
-        },
-        "patternProperties": {
-          "^_\\w[^.]*$": {
-            "$ref": "#/definitions/extension"
-          }
-        },
-        "additionalProperties": false,
-        "required": ["type", "url"]
+        "$ref": "#/definitions/hub"
       }
     },
     "items": {
@@ -207,6 +191,25 @@
         "^[^.]*$": {}
       },
       "additionalProperties": false
+    },
+    "hub": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "patternProperties": {
+        "^_\\w[^.]*$": {
+          "$ref": "#/definitions/extension"
+        }
+      },
+      "additionalProperties": false,
+      "required": ["type", "url"]
     }
   }
 }
