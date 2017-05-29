@@ -88,7 +88,6 @@
       "required": ["url", "mime_type"]
     },
     "author": {
-      "title": "Author",
       "type": "object",
       "properties": {
         "name": {
@@ -110,7 +109,6 @@
       "additionalProperties": false
     },
     "extension": {
-      "title": "Extension",
       "type": "object",
       "patternProperties": {
         "^[^.]*$": {}
