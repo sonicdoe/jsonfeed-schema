@@ -122,32 +122,7 @@
           "attachments": {
             "type": "array",
             "items": {
-              "type": "object",
-              "properties": {
-                "url": {
-                  "type": "string",
-                  "format": "uri"
-                },
-                "mime_type": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "size_in_bytes": {
-                  "type": "number"
-                },
-                "duration_in_seconds": {
-                  "type": "number"
-                }
-              },
-              "patternProperties": {
-                "^_\\w[^.]*$": {
-                  "$ref": "#/definitions/extension"
-                }
-              },
-              "additionalProperties": false,
-              "required": ["url", "mime_type"]
+              "$ref": "#/definitions/attachment"
             }
           }
         },
@@ -173,6 +148,34 @@
   "additionalProperties": false,
   "required": ["version", "title", "items"],
   "definitions": {
+    "attachment": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "mime_type": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "size_in_bytes": {
+          "type": "number"
+        },
+        "duration_in_seconds": {
+          "type": "number"
+        }
+      },
+      "patternProperties": {
+        "^_\\w[^.]*$": {
+          "$ref": "#/definitions/extension"
+        }
+      },
+      "additionalProperties": false,
+      "required": ["url", "mime_type"]
+    },
     "author": {
       "title": "Author",
       "type": "object",
