@@ -13,12 +13,10 @@
       "type": "string"
     },
     "home_page_url": {
-      "type": "string",
-      "format": "uri"
+      "$ref": "#/definitions/uri"
     },
     "feed_url": {
-      "type": "string",
-      "format": "uri"
+      "$ref": "#/definitions/uri"
     },
     "description": {
       "type": "string"
@@ -27,16 +25,13 @@
       "type": "string"
     },
     "next_url": {
-      "type": "string",
-      "format": "uri"
+      "$ref": "#/definitions/uri"
     },
     "icon": {
-      "type": "string",
-      "format": "uri"
+      "$ref": "#/definitions/uri"
     },
     "favicon": {
-      "type": "string",
-      "format": "uri"
+      "$ref": "#/definitions/uri"
     },
     "author": {
       "$ref": "#/definitions/author"
@@ -69,8 +64,7 @@
       "type": "object",
       "properties": {
         "url": {
-          "type": "string",
-          "format": "uri"
+          "$ref": "#/definitions/uri"
         },
         "mime_type": {
           "type": "string"
@@ -101,12 +95,10 @@
           "type": "string"
         },
         "url": {
-          "type": "string",
-          "format": "uri"
+          "$ref": "#/definitions/uri"
         },
         "avatar": {
-          "type": "string",
-          "format": "uri"
+          "$ref": "#/definitions/uri"
         }
       },
       "minProperties": 1,
@@ -132,8 +124,7 @@
           "type": "string"
         },
         "url": {
-          "type": "string",
-          "format": "uri"
+          "$ref": "#/definitions/uri"
         }
       },
       "patternProperties": {
@@ -151,12 +142,10 @@
           "type": "string"
         },
         "url": {
-          "type": "string",
-          "format": "uri"
+          "$ref": "#/definitions/uri"
         },
         "external_url": {
-          "type": "string",
-          "format": "uri"
+          "$ref": "#/definitions/uri"
         },
         "title": {
           "type": "string"
@@ -171,12 +160,10 @@
           "type": "string"
         },
         "image": {
-          "type": "string",
-          "format": "uri"
+          "$ref": "#/definitions/uri"
         },
         "banner_image": {
-          "type": "string",
-          "format": "uri"
+          "$ref": "#/definitions/uri"
         },
         "date_published": {
           "type": "string",
@@ -213,6 +200,10 @@
         { "required": ["content_text"] }
       ],
       "required": ["id"]
+    },
+    "uri": {
+      "type": "string",
+      "format": "uri"
     }
   }
 }
