@@ -58,7 +58,7 @@
           }
         },
         "patternProperties": {
-          "^_\\w[^.]*$": {
+          "^_[a-zA-Z][^.]*$": {
             "$ref": "#/definitions/extension"
           }
         },
@@ -142,7 +142,7 @@
                 }
               },
               "patternProperties": {
-                "^_\\w[^.]*$": {
+                "^_[a-zA-Z][^.]*$": {
                   "$ref": "#/definitions/extension"
                 }
               },
@@ -152,7 +152,7 @@
           }
         },
         "patternProperties": {
-          "^_\\w[^.]*$": {
+          "^_[a-zA-Z][^.]*$": {
             "$ref": "#/definitions/extension"
           }
         },
@@ -166,7 +166,7 @@
     }
   },
   "patternProperties": {
-    "^_\\w[^.]*$": {
+    "^_[a-zA-Z][^.]*$": {
       "$ref": "#/definitions/extension"
     }
   },
@@ -191,7 +191,7 @@
       },
       "minProperties": 1,
       "patternProperties": {
-        "^_\\w[^.]*$": {
+        "^_[a-zA-Z][^.]*$": {
           "$ref": "#/definitions/extension"
         }
       },
