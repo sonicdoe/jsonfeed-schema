@@ -9,3 +9,13 @@ It is also available on npm:
 ```
 $ npm install jsonfeed-schema
 ```
+
+```js
+const jsonfeedSchema = require('jsonfeed-schema')
+// {
+//   '$schema': 'http://json-schema.org/draft-06/schema#',
+//   title: 'JSON Feed',
+//   description: 'JSON Feed Version 1',
+//   …
+// }
+```
