@@ -4,7 +4,7 @@
 
 The JSON Schema for [JSON Feed Version 1](https://jsonfeed.org/version/1) is in [`schema-v1.json`](./schema-v1.json).
 
-It is also available on npm:
+It is also available on npm and RubyGems:
 
 ```
 $ npm install jsonfeed-schema
@@ -18,4 +18,20 @@ const jsonfeedSchema = require('jsonfeed-schema')
 //   description: 'JSON Feed Version 1',
 //   …
 // }
+```
+
+```
+$ gem install jsonfeed-schema
+```
+
+```ruby
+require 'jsonfeed/schema'
+
+JSONFeed::SCHEMA
+# {
+#   "$schema"=>"http://json-schema.org/draft-06/schema#",
+#   "title"=>"JSON Feed",
+#   "description"=>"JSON Feed Version 1",
+#   …
+# }
 ```
