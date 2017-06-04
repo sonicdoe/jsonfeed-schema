@@ -2,6 +2,12 @@
 
 All releases and their notable changes are documented in this file.
 
+## v0.4.0 (2017-06-04)
+
+- Update regex for extensions ([`4fc8c74`](https://github.com/sonicdoe/jsonfeed-schema/commit/4fc8c74bfb190802dcc1ca350265401ee2450445))
+- Add property descriptions ([`8ed7af8`](https://github.com/sonicdoe/jsonfeed-schema/commit/8ed7af8e578b21db96d2221800f84c87ef6ea16b))
+- Add Ruby gem ([`c0bd3f3`](https://github.com/sonicdoe/jsonfeed-schema/commit/c0bd3f31b26f7c8fcb678894ed58527e89da9729))
+
 ## v0.3.0 (2017-05-20)
 
 - Specify exact value of `version` property (`https://jsonfeed.org/version/1`) ([`a6c2094`](https://github.com/sonicdoe/jsonfeed-schema/commit/a6c2094aaea9644be7dda2dc895cdc14095e9587))
