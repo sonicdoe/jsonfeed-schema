@@ -13,7 +13,6 @@ const macro = (t, url) => {
 
 test.beforeEach(t => {
   t.context.ajv = new Ajv()
-  t.context.ajv.addMetaSchema(require('ajv/lib/refs/json-schema-draft-06.json'))
 })
 
 test('shapeof.com', macro, 'http://shapeof.com/feed.json')

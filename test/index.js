@@ -10,7 +10,6 @@ const macro = (t, data) => {
 
 test.beforeEach(t => {
   t.context.ajv = new Ajv()
-  t.context.ajv.addMetaSchema(require('ajv/lib/refs/json-schema-draft-06.json'))
 })
 
 test('simple', macro, require('./examples/simple.json'))
