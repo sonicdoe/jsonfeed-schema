@@ -1,4 +1,4 @@
-# jsonfeed-schema [![Build status](https://img.shields.io/travis/sonicdoe/jsonfeed-schema.svg)](https://travis-ci.org/sonicdoe/jsonfeed-schema)
+# jsonfeed-schema [![Build status](https://img.shields.io/travis/sonicdoe/jsonfeed-schema/master.svg)](https://travis-ci.org/sonicdoe/jsonfeed-schema)
 
 > [JSON Schema](http://json-schema.org) for [JSON Feed](https://jsonfeed.org)
 
