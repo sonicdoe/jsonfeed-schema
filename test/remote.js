@@ -27,5 +27,6 @@ test('manton.org', macro, 'https://manton.org/feed/json')
 test.skip('micro.blog', macro, 'https://micro.blog/feeds/manton.json')
 test('timetable.manton.org', macro, 'http://timetable.manton.org/feed.json')
 test('therecord.co', macro, 'http://therecord.co/feed.json')
-test('allenpike.com', macro, 'http://www.allenpike.com/feed.json')
+// Invalid JSON.
+test.skip('allenpike.com', macro, 'http://www.allenpike.com/feed.json')
 test('jsonfeed.org', macro, 'https://jsonfeed.org/feed.json')
