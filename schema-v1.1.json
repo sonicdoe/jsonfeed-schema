@@ -51,6 +51,11 @@
       "description": "The feed author.",
       "allOf": [{ "$ref": "#/definitions/author" }]
     },
+    "authors": {
+      "description": "One or more feed authors.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/author" }
+    },
     "expired": {
       "description": "Whether or not the feed is finished — that is, whether or not it will ever update again. A feed for a temporary event, such as an instance of the Olympics, could expire. If the value is true, then it’s expired. Any other value, or the absence of expired, means the feed may continue to update.",
       "type": "boolean"
@@ -137,6 +142,11 @@
           "author": {
             "description": "The author of the item.",
             "allOf": [{ "$ref": "#/definitions/author" }]
+          },
+          "authors": {
+            "description": "The authors of the item.",
+            "type": "array",
+            "items": { "$ref": "#/definitions/author" }
           },
           "tags": {
             "description": "Can have any plain text values you want. Tags tend to be just one word, but they may be anything. Note: they are not the equivalent of Twitter hashtags. Some blogging systems and other feed formats call these categories.",
