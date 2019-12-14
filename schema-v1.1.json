@@ -56,6 +56,10 @@
       "type": "array",
       "items": { "$ref": "#/definitions/author" }
     },
+    "language": {
+      "description": "The primary language for the feed in the format specified in RFC 5646. The value is usually a 2-letter language tag from ISO 639-1, optionally followed by a region tag.",
+      "type": "string"
+    },
     "expired": {
       "description": "Whether or not the feed is finished — that is, whether or not it will ever update again. A feed for a temporary event, such as an instance of the Olympics, could expire. If the value is true, then it’s expired. Any other value, or the absence of expired, means the feed may continue to update.",
       "type": "boolean"
@@ -154,6 +158,10 @@
             "items": {
               "type": "string"
             }
+          },
+          "language": {
+            "description": "The language for this item, using the format specified in RFC 5646. The value can be different than the primary language for the feed when a specific item is written in a different language than other items in the feed.",
+            "type": "string"
           },
           "attachments": {
             "description": "Lists related resources. Podcasts, for instance, would include an attachment that’s an audio or video file.",
