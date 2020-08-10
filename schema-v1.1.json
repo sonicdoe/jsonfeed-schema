@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "JSON Feed",
-  "description": "JSON Feed Version 1",
+  "description": "JSON Feed Version 1.1",
   "type": "object",
   "properties": {
     "version": {
@@ -38,12 +38,12 @@
       "format": "uri"
     },
     "icon": {
-      "description": "The URL of an image for the feed suitable to be used in a timeline, much the way an avatar might be used. It should be square and relatively large — such as 512 x 512 — so that it can be scaled-down and so that it can look good on retina displays. It should use transparency where appropriate, since it may be rendered on a non-white background.",
+      "description": "The URL of an image for the feed suitable to be used in a timeline, much the way an avatar might be used. It should be square and relatively large — such as 512 x 512 pixels — so that it can be scaled-down and so that it can look good on retina displays. It should use transparency where appropriate, since it may be rendered on a non-white background.",
       "type": "string",
       "format": "uri"
     },
     "favicon": {
-      "description": "The URL of an image for the feed suitable to be used in a source list. It should be square and relatively small, but not smaller than 64 x 64 (so that it can look good on retina displays). This image should use transparency where appropriate, since it may be rendered on a non-white background.",
+      "description": "The URL of an image for the feed suitable to be used in a source list. It should be square and relatively small, but not smaller than 64 x 64 pixels (so that it can look good on retina displays). This image should use transparency where appropriate, since it may be rendered on a non-white background.",
       "type": "string",
       "format": "uri"
     },
@@ -237,7 +237,7 @@
           "format": "uri"
         },
         "avatar": {
-          "description": "The URL for an image for the author. It should be square and relatively large — such as 512 x 512 — and should use transparency where appropriate, since it may be rendered on a non-white background.",
+          "description": "The URL for an image for the author. It should be square and relatively large — such as 512 x 512 pixels — and should use transparency where appropriate, since it may be rendered on a non-white background.",
           "type": "string",
           "format": "uri"
         }
