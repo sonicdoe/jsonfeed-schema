@@ -2,7 +2,7 @@
 
 > [JSON Schema](http://json-schema.org) for [JSON Feed](https://jsonfeed.org)
 
-The JSON Schema for [JSON Feed Version 1](https://jsonfeed.org/version/1) is in [`schema-v1.json`](./schema-v1.json).
+The JSON Schema for [JSON Feed Version 1.1](https://jsonfeed.org/version/1.1) is in [`schema-v1.1.json`](./schema-v1.1.json). The schema for version 1 is in [`schema-v1.json`](./schema-v1.json).
 
 It is also available on npm and RubyGems:
 
@@ -16,7 +16,7 @@ const jsonfeedSchema = require('jsonfeed-schema')
 // {
 //   '$schema': 'http://json-schema.org/draft-07/schema#',
 //   title: 'JSON Feed',
-//   description: 'JSON Feed Version 1',
+//   description: 'JSON Feed Version 1.1',
 //   …
 // }
 
@@ -37,7 +37,7 @@ JSONFeed::SCHEMA
 # {
 #   "$schema"=>"http://json-schema.org/draft-07/schema#",
 #   "title"=>"JSON Feed",
-#   "description"=>"JSON Feed Version 1",
+#   "description"=>"JSON Feed Version 1.1",
 #   …
 # }
 
