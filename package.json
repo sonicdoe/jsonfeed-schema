@@ -12,7 +12,8 @@
     "index.js",
     "schema-v1.json",
     "schema-v1.1.json",
-    "v1.js"
+    "v1.js",
+    "v1.1.js"
   ],
   "keywords": [
     "json schema",

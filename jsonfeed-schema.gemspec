@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.summary  = 'JSON Schema for JSON Feed'
   s.author   = 'Jakob Krigovsky'
   s.email    = 'jakob@krigovsky.com'
-  s.files    = ['lib/jsonfeed/schema.rb', 'lib/jsonfeed-schema.rb', 'schema-v1.json']
+  s.files    = ['lib/jsonfeed/schema.rb', 'lib/jsonfeed-schema.rb', 'schema-v1.json', 'schema-v1.1.json']
   s.homepage = 'https://github.com/sonicdoe/jsonfeed-schema'
   s.license  = 'ISC'
 end

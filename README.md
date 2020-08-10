@@ -22,6 +22,7 @@ const jsonfeedSchema = require('jsonfeed-schema')
 
 // Load a specific version:
 const jsonFeedSchemaV1 = require('jsonfeed-schema/v1')
+const jsonFeedSchemaV1_1 = require('jsonfeed-schema/v1.1')
 ```
 
 ```
@@ -42,4 +43,5 @@ JSONFeed::SCHEMA
 
 # Load a specific version:
 JSONFeed::SCHEMA_V1
+JSONFeed::SCHEMA_V1_1
 ```

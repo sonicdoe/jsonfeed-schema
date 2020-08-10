@@ -1,3 +1,3 @@
 'use strict'
 
-module.exports = require('./v1')
+module.exports = require('./v1.1')
