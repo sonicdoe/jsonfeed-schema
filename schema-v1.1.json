@@ -8,7 +8,10 @@
       "description": "The URL of the version of the format the feed uses. This should appear at the very top.",
       "type": "string",
       "format": "uri",
-      "const": "https://jsonfeed.org/version/1"
+      "enum": [
+        "https://jsonfeed.org/version/1",
+        "https://jsonfeed.org/version/1.1"
+      ]
     },
     "title": {
       "description": "The name of the feed, which will often correspond to the name of the website (blog, for instance), though not necessarily.",
