@@ -1,8 +1,8 @@
-import test from 'ava'
-import Ajv from 'ajv'
-import got from 'got'
+const test = require('ava')
+const Ajv = require('ajv')
+const got = require('got')
 
-import schema from '..'
+const schema = require('..')
 
 const macro = (t, url) => {
   return got(url, { json: true }).then(res => {

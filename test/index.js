@@ -1,7 +1,7 @@
-import test from 'ava'
-import Ajv from 'ajv'
+const test = require('ava')
+const Ajv = require('ajv')
 
-import schema from '..'
+const schema = require('..')
 
 const macro = (t, data) => {
   const valid = t.context.ajv.validate(schema, data)
