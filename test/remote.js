@@ -5,8 +5,8 @@ const got = require('got')
 const schema = require('..')
 
 const macro = (t, url) => {
-  return got(url, { json: true }).then(res => {
-    const valid = t.context.ajv.validate(schema, res.body)
+  return got(url).json().then(body => {
+    const valid = t.context.ajv.validate(schema, body)
     t.true(valid, t.context.ajv.errorsText())
   })
 }
