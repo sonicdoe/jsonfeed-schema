@@ -20,7 +20,7 @@
     "feed"
   ],
   "devDependencies": {
-    "ajv": "^6.0.0",
+    "ajv": "^6.12.3",
     "ava": "^0.21.0",
     "got": "^7.0.0",
     "standard": "^14.3.4"
