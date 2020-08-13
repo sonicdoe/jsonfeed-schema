@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = 'jsonfeed-schema'
-  s.version  = '0.4.0'
+  s.version  = '0.5.0'
   s.summary  = 'JSON Schema for JSON Feed'
   s.author   = 'Jakob Krigovsky'
   s.email    = 'jakob@krigovsky.com'
