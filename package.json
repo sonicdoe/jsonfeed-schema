@@ -10,7 +10,8 @@
   },
   "files": [
     "index.js",
-    "schema-v1.json"
+    "schema-v1.json",
+    "v1.js"
   ],
   "keywords": [
     "json schema",

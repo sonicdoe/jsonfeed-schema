@@ -11,6 +11,7 @@ $ npm install jsonfeed-schema
 ```
 
 ```js
+// Load the latest version:
 const jsonfeedSchema = require('jsonfeed-schema')
 // {
 //   '$schema': 'http://json-schema.org/draft-06/schema#',
@@ -18,6 +19,9 @@ const jsonfeedSchema = require('jsonfeed-schema')
 //   description: 'JSON Feed Version 1',
 //   …
 // }
+
+// Load a specific version:
+const jsonFeedSchemaV1 = require('jsonfeed-schema/v1')
 ```
 
 ```
