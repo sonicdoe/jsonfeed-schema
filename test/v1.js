@@ -1,7 +1,7 @@
 const test = require('ava')
 const Ajv = require('ajv')
 
-const schema = require('..')
+const schema = require('../v1')
 
 const macro = (t, data) => {
   const valid = t.context.ajv.validate(schema, data)
@@ -12,6 +12,6 @@ test.beforeEach(t => {
   t.context.ajv = new Ajv()
 })
 
-test('simple', macro, require('./examples/simple.json'))
-test('podcast', macro, require('./examples/podcast.json'))
-test('microblog', macro, require('./examples/microblog.json'))
+test('simple', macro, require('./examples/v1/simple.json'))
+test('podcast', macro, require('./examples/v1/podcast.json'))
+test('microblog', macro, require('./examples/v1/microblog.json'))
