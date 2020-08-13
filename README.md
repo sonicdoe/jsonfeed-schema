@@ -31,6 +31,7 @@ $ gem install jsonfeed-schema
 ```ruby
 require 'jsonfeed/schema'
 
+# Load the latest version:
 JSONFeed::SCHEMA
 # {
 #   "$schema"=>"http://json-schema.org/draft-06/schema#",
@@ -38,4 +39,7 @@ JSONFeed::SCHEMA
 #   "description"=>"JSON Feed Version 1",
 #   …
 # }
+
+# Load a specific version:
+JSONFeed::SCHEMA_V1
 ```
